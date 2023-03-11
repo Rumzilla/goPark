@@ -27,7 +27,13 @@ const Header = () => {
                     </button>
 
                     <a href="/" className="shop-icon"></a>
-                    <a href="/" className="language-icon"></a>
+                    <a href="/" className="language-icon">
+                    <div className="lang-menu">
+                            <button className="lang-menu-item">🇬🇧</button>
+                            <button className="lang-menu-item">🇷🇺</button>
+                            <button className="lang-menu-item">🇰🇬</button>
+                        </div>
+                    </a>
                     <a href="" className="theme-icon"></a>
                     <a href="/" className="login-button">
                         Войти
