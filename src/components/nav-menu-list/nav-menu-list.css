@@ -1,0 +1,75 @@
+.content-menu {
+    width: 530px;
+    text-align: center;
+    display: block;
+}
+
+.content-item {
+    margin-right: 35px;
+    display: inline-block;
+    font-family: 'Montserrat Alternates';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.tournament-text {
+    margin-right: 35px;
+    display: inline-block;
+    font-family: 'Montserrat Alternates';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.content-menu .dot:nth-child(3) {
+    display: inline-block;
+    background: #E39ACD;
+    border-radius: 50%;
+    border: #E39ACD;
+    margin-right: 31px;
+    width: 20px;
+    height: 20px;
+}
+
+.content-menu .dot:nth-child(7) {
+    display: inline-block;
+    border-radius: 50%;
+    background: #E85D04;
+    border: #E85D04;
+    margin-right: 31px;
+    width: 20px;
+    height: 20px;
+}
+
+.content-item span {
+    display: inline-block;
+    width: 158px;
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.header-content-block {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tournament-img {
+    width: 630px;
+    height: 400px;
+    display: block;
+}
+
+.tournament-img .tournament-text:hover{
+    border: 10px solid black;
+}
