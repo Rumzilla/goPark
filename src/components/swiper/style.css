@@ -1,0 +1,60 @@
+.swiper-block {
+    width: 295px;
+    height: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
+.swiper-image-block{
+    width: 131px;
+    height: 150px;
+    margin: 30px 81px;
+    background: url("../../shared/icons/Codify.png") center center/contain no-repeat;
+}
+
+.second-block {
+    background: url("../../shared/icons/Mega.png") center center/contain no-repeat;
+}
+
+.third-block {
+    background: url("../../shared/icons/Infocom.png") center center/contain no-repeat;
+}
+
+.fourth-block {
+    background: url("../../shared/icons/DigitalGovKg.png") center center/contain no-repeat;
+}
+
+.border-line {
+    border: 2px solid #B7B7B7;
+    width: 275px;
+    margin: 0 auto;
+}
+
+.swiper-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.swiper-description {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.swiper-contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.swiper-contact {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #717171;
+}
