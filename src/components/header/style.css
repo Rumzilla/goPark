@@ -1,0 +1,50 @@
+.header-block {
+    padding: 26px 0;
+}
+
+.logo-img {
+    display: block;
+    background: url(../../shared/icons/Logo.svg) center center/cover no-repeat;
+    width: 53px;
+    height: 47px;    
+}
+
+.header-block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 46px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #70A4D7;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.user-icon {
+    margin-left: 12px;
+    display: inline-block;
+    background: url(../../shared/icons/user-icon.svg) center center/cover no-repeat;
+    width: 20px;
+    height: 20px;
+}
