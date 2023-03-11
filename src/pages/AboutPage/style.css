@@ -1,5 +1,5 @@
 .head-section {
-    background: url("../../shared/img/Background-of-about-page.jpg") center center/cover no-repeat;
+    /* background: url("../../shared/img/Background-of-about-page.jpg") center center/cover no-repeat; */
     height: 600px;
     margin-top: -107px;
 
@@ -87,9 +87,6 @@
     font-size: 20px;
     line-height: 35px;
     color: white;
-}
-
-.interesting-section {
 }
 
 .interesting-header {
