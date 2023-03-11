@@ -2,6 +2,7 @@
     padding: 26px 0;
     display: flex;
     justify-content: space-between;
+    background: rgba(0, 0, 0, 0);
 }
 
 .logo-img {
@@ -17,7 +18,7 @@
     align-items: center;
 }
 
-.nav-item {
+.nav-item-asd {
     font-family: 'Montserrat Alternates';
     margin-right: 46px;
     font-weight: 600;
@@ -129,4 +130,8 @@
     width: 27px;
     height: 26px;
     margin-right: 24px;
+}
+
+button:focus {
+    outline: none;
 }

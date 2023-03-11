@@ -1,4 +1,4 @@
-.footer-item {
+.footer-items {
     background: #131313;
     height: 285px;
     padding: 32px 0px 19px;
@@ -42,14 +42,14 @@
     background: url("../../shared/icons/Email-icon.svg") center center/cover no-repeat;
 }
 
-.page-navigation {
+.page-navigations {
     width: 387px;
     display: flex;
     justify-content: space-between;
     margin: 32px auto 0px;
 }
 
-.page-link {
+.page-links {
     display: block;
     font-weight: 300;
     font-size: 20px;
