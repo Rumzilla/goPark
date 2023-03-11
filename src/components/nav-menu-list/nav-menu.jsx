@@ -4,7 +4,7 @@ import './nav-menu-list.css'
 
 const Nav_menu_list = () => {
 
-    const [openGallery, setOpenGallery] = useState(true)
+    const [openGallery, setOpenGallery] = useState(false)
     const [openTournament, setOpenTournament] = useState(false)
     const [openLessons, setOpenLessons] = useState(false)
     const [openCleaning, setOpenCleaning] = useState(false)
