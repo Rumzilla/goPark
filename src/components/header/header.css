@@ -34,8 +34,8 @@
     border: none;
 }
 
-.nav-item:hover {
-    border-bottom: 3px solid #E39ACD;
+.nav-item-asd:hover {
+    text-decoration: 3px underline #E39ACD;
 }
 
 .down-icon {
