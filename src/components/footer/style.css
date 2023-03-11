@@ -1,0 +1,86 @@
+.footer-item {
+    background: #131313;
+    height: 285px;
+    padding: 32px 0px 19px;
+}
+.social-icons-links {
+    width: 255px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.social-links {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.instagram-icon {
+    background: url("../../shared/icons/Instagram-icon.svg") center center/cover no-repeat;
+}
+
+.facebook-icon {
+    background: url("../../shared/icons/Facebook-icon.svg") center center/cover no-repeat;
+}
+
+.whatsapp-icon {
+    background: url("../../shared/icons/WhatsApp-icon.svg") center center/cover no-repeat;
+}
+
+.telegram-icon {
+    background: url("../../shared/icons/Telegram-icon.svg") center center/cover no-repeat;
+}
+
+.youtube-icon {
+    background: url("../../shared/icons/YouTube-icon.svg") center center/cover no-repeat;
+}
+
+.email-icon {
+    background: url("../../shared/icons/Email-icon.svg") center center/cover no-repeat;
+}
+
+.page-navigation {
+    width: 387px;
+    display: flex;
+    justify-content: space-between;
+    margin: 32px auto 0px;
+}
+
+.page-link {
+    display: block;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.head-icon-for-footer {
+    display: block;
+    width: 170px;
+    height: 42px;
+    background: url("../../shared/icons/ParkGo-for-footer.png") center center/cover no-repeat;
+    margin: 40px auto 0;
+}
+
+.footer-description {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.certificate-up-to {
+    width: 57px;
+    height: 22px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin: 15px auto 0;
+}
