@@ -13,6 +13,8 @@
     color: #FFFFFF;
     width: 870px;
     padding-top: 140px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #E85D04;
 }
 
 .about-us-description {
