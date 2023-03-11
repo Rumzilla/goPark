@@ -11,7 +11,6 @@ function App() {
           <Switch>
             <Route exact path='/' component={MainContent}/>
           </Switch>
-          <SwiperBlock />
         </div>
       <Footer />
       </>

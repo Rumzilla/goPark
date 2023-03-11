@@ -1,15 +1,46 @@
-import {GET_EVENT} from "../types/types";
+import {GET_EVENT, GET_EVENT_BY_ID} from "../types/types";
 
-const initialState = {}
+const initialState = []
 
 const contentReducers = (state = initialState, action) => {
     switch (action.type) {
         case GET_EVENT.REQUEST:
-            return{
+            return {
                 ...state,
                 loading: true,
-                error: null,
+                error:null
             }
-
+        case GET_EVENT.RECEIVE:
+            return {
+                ...state,
+                loading: false,
+                data: action.payload
+            }
+        case GET_EVENT.FAILURE:
+            return {
+                ...state,
+                loading:false,
+                error: action.payload
+            }
+        case GET_EVENT_BY_ID.REQUEST:
+            return {
+                ...state,
+            }
+        case GET_EVENT_BY_ID.RECEIVE:
+            return {
+                ...state,
+                loading:false,
+                data:action.payload
+            }
+        case GET_EVENT_BY_ID.FAILURE:
+            return {
+                ...state,
+                loading: false,
+                error: action.payload
+            }
+        default:
+            return state
     }
 }
+
+export default contentReducers
