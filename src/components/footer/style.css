@@ -59,8 +59,16 @@
     padding-bottom: 5px;
 }
 
-.page-links:hover {
+.page-links:nth-child(1):hover {
     color:#E85D04;
+    transition: all 200ms ease-in-out;
+}
+.page-links:nth-child(2):hover {
+    color:#E39ACD;
+    transition: all 200ms ease-in-out;
+}
+.page-links:nth-child(3):hover {
+    color:#70A4D7;
     transition: all 200ms ease-in-out;
 }
 
