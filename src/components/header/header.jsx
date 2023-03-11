@@ -27,12 +27,12 @@ const Header = () => {
                     <a href='/' className="logo-img"></a>
                 </div>
                 <div className="nav-block">
-                    <button onClick={DropDownMenu} className="nav-item">
+                    <button onClick={DropDownMenu} className="nav-item-asd">
                         {t("events")}
                         <span className="down-icon"></span>
                     </button>
 
-                    <a href="/" className="shop-icon"></a>
+                    <a href="/shop" className="shop-icon"></a>
                     <a className="language-icon">
                     <div className="lang-menu">
                             <button onClick={() => changeLanguage('en')} className="lang-menu-item">🇬🇧</button>
