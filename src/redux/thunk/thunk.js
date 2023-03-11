@@ -1,5 +1,19 @@
 import { setToken, setUserData } from "../../services/token"
-import { authLoginErrorActionCreator, authLoginRequestActionCreator, authLoginSuccessActionCreator, authRegisterErrorActionCreator, authRegisterRequestActionCreator, authRegisterSuccessActionCreator } from "../actions/actions"
+import {
+    authLoginErrorActionCreator,
+    authLoginRequestActionCreator,
+    authLoginSuccessActionCreator,
+    authRegisterErrorActionCreator,
+    authRegisterRequestActionCreator,
+    authRegisterSuccessActionCreator,
+    getCreatorsByIdFailureActionCreator,
+    getCreatorsByIdReceiveActionCreator,
+    getCreatorsByIdRequestActionCreator,
+    getEventByIdReceiveActionCreator,
+    getEventFailureActionCreator,
+    getEventReceiveActionCreator,
+    getEventRequestActionCreator
+} from "../actions/actions"
 
 // ----------------------auth----------------------//
 const authRegisterUser = (data) => async (dispatch) => {
@@ -28,4 +42,37 @@ const authLoginUser = (data) => async (dispatch) => {
     }
 }
 
-export default { authRegisterUser, authLoginUser}
+//-----------------get events------------------//
+
+const getEventList = (data) => async (dispatch) => {
+    dispatch(getEventRequestActionCreator())
+    try {
+        const res = await http.get("http://13.115.195.252/shop/")
+        dispatch(getEventReceiveActionCreator(res.data))
+    }
+    catch (err) {
+        dispatch(getEventFailureActionCreator(err))
+    }
+}
+
+const getEventItem = (id) => async (dispatch) => {
+    dispatch(getEventRequestActionCreator())
+    try {
+        const res = await http.get(`http://13.115.195.252/shop/${id}`)
+        dispatch(getEventByIdReceiveActionCreator(res.data))
+    } catch (err) {
+        dispatch(getCreatorsByIdFailureActionCreator(err))
+    }
+}
+
+const getCreator = (id) => async (dispatch) => {
+    dispatch(getCreatorsByIdRequestActionCreator())
+    try {
+        const res = await http.get(`http://13.115.195.252/shop/${id}`)
+        dispatch(getCreatorsByIdReceiveActionCreator(res.data))
+    } catch (err) {
+        dispatch(getCreatorsByIdFailureActionCreator(err))
+    }
+}
+
+export default { authRegisterUser, authLoginUser, getEventList, getEventItem, getCreator}
