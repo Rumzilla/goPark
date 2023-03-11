@@ -7,6 +7,7 @@ import Footer from "./components/footer/footer";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import Header from "./components/header/header";
 import './App.css';
+import NewsPage from "./pages/NewsPage/NewsPage";
 
 
   function App() {
@@ -16,6 +17,7 @@ import './App.css';
             <Switch>
             <Route exact path='/' component={MainContent} />
             <Route exact path='/about' component={AboutPage}/>
+            <Route exact path='/news' component={NewsPage}/>
             <Route exact path='/sign-in' component={SignInPage} />
             <Route exact path='/sign-up' component={SignUpPage} />
           </Switch>
