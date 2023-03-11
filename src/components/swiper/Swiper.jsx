@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {Navigation, Pagination, Scrollbar, A11y} from "swiper";
+import {Navigation, A11y} from "swiper";
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
@@ -8,6 +8,7 @@ import 'swiper/css';
 import './style.css'
 
 const SwiperBlock = () => {
+
   return (
     <div className='partners-block-wrap'>
       <div className='partners-block'>
@@ -15,8 +16,8 @@ const SwiperBlock = () => {
         <h2 className="partners-header-text">Партнеры</h2>
       </div>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
+        modules={[Navigation, A11y]}
+        spaceBetween={10}
         slidesPerView={4}
         navigation
         pagination={{ clickable: true }}

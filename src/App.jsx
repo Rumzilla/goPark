@@ -1,19 +1,17 @@
-import './App.css';
 import {Route, Switch} from "react-router-dom";
 import MainContent from "./components/MainContent/MainContent";
-import SwiperBlock from "./components/swiper/Swiper";
 import Footer from "./components/footer/footer";
+import AboutPage from "./pages/AboutPage/AboutPage";
+import './App.css';
 
 function App() {
     return (
       <>
-        <div className="container">
           <Switch>
             <Route exact path='/' component={MainContent}/>
+            <Route exact path='/about' component={AboutPage}/>
           </Switch>
-          <SwiperBlock />
-        </div>
-      <Footer />
+        <Footer />
       </>
     );
 }

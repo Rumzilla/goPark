@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css'
 import img1 from '../../shared/img/Rectangle1.png'
+import SwiperBlock from "../swiper/Swiper";
 
 const MainContent = () => {
     return (
@@ -37,6 +38,7 @@ const MainContent = () => {
                     </div>
                 </div>
             </div>
+            <SwiperBlock />
         </div>
     );
 };

@@ -13,7 +13,7 @@ const Footer = () => {
               <a className='social-links email-icon' href="/"></a>
             </div>
           <div className="page-navigation">
-              <a className='page-link' href="/">О нас</a>
+              <a className='page-link' href="/about">О нас</a>
               <a className='page-link' href="/">Новости</a>
               <a className='page-link' href="/">Связаться</a>
             </div>
