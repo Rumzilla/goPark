@@ -21,7 +21,7 @@ const Footer = () => {
           <span className="footer-description">
             Организация мероприятий в парках города Бишкек
           </span>
-          <div className="certificate-up-to">C 2023</div>
+          <div className="certificate-up-to">©2023</div>
         </div>
     );
 };
