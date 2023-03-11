@@ -10,9 +10,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
         <Provider store={store}>
-            <React.StrictMode>
+            <Suspense fallback={<div>Loading</div>}>
                 <App/>
-            </React.StrictMode>
+            </Suspense>
         </Provider>
     </BrowserRouter>
 );
