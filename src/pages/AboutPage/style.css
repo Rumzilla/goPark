@@ -1,9 +1,11 @@
 .head-section {
-    background: url("../../shared/img/Background-of-about-page.jpg") center center/cover no-repeat;
+    /*background: url("../../shared/img/Background-of-about-page.jpg") center center/cover no-repeat;*/
     height: 600px;
-    margin-top: -107px;
+    /*margin-top: -107px;*/
 
 }
+
+
 
 .about-us-text {
     font-family: Montserrat Alternates;
