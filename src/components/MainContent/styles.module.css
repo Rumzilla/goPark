@@ -1,0 +1,114 @@
+.content_block {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    margin: 137px auto 100px;
+    width: 1240px;
+}
+.main_title {
+    border-left: 3px solid #E85D04;
+    padding-left: 10px;
+    color: white;
+}
+.main_content {
+    display: flex;
+    margin-top: 53px;
+    gap: 50px;
+}
+.content_title {
+    padding-bottom: 17px;
+    margin-bottom: 19px;
+    border-bottom: 4px solid #EF9637;
+    color: white;
+    font-size: 30px;
+    line-height: 36px;
+}
+.content_description {
+    color: white;
+    margin-bottom: 63px;
+    font-size: 20px;
+    line-height: 24px;
+}
+.date_location {
+    display: flex;
+    gap: 43.5px;
+    padding-bottom: 56px;
+    border-bottom: 2px solid #A6A6A6;
+    margin-bottom: 20px;
+}
+.date_block {
+    display: flex;
+    gap: 12px;
+}
+.date_icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../../shared/icons/date.svg");
+}
+.date_text {
+    color: #B7B7B7;
+}
+.location_block {
+    display: flex;
+    gap: 12px;
+}
+.location_icon {
+    display: block;
+    width: 15px;
+    height: 18px;
+    background: url("../../shared/icons/location.svg") center center/cover no-repeat;
+}
+.location_text {
+    font-size: 15px;
+    line-height: 18px;
+    color: #B7B7B7;
+}
+.apply_event {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.creators {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.creators_icons_parent {
+    display: flex;
+}
+.creators_icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url("../../shared/icons/avatar.svg") center center/cover no-repeat;
+}
+.creators_icon2 {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url("../../shared/icons/avatar.svg") center center/cover no-repeat;
+}
+.creators_icon3 {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url("../../shared/icons/avatar.svg") center center/cover no-repeat;
+}
+.creators_text {
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: #D9D9D9;
+}
+.apply_button {
+    background: #E85D04;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+.apply_button:hover {
+    background: #EF9637;
+}
