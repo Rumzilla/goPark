@@ -12,12 +12,7 @@ import NewsPage from "./pages/NewsPage/NewsPage";
 
   function App() {
     return (
-      <div className="App"
-      // style = {{
-      //   background : darkMode? 'black': '',
-      //   color : darkMode? 'white': ''
-      // }}
-      >
+      <div className="App">
           <Header/>
             <Switch>
             <Route exact path='/' component={MainContent} />

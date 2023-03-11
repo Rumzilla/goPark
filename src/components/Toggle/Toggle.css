@@ -18,6 +18,15 @@
     height: 22px;
 }
 
+.r-button{
+    border-radius: 100%;
+    background: #000000;
+    position: absolute; 
+    width: 22px;
+    height: 22px;
+    left: 32px
+}
+
 .test {
     display: flex;
     align-items: center;

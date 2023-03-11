@@ -1,3 +1,5 @@
+@import('../../index.css');
+
 .content_block {
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 400;
@@ -7,7 +9,7 @@
 .main_title {
     border-left: 3px solid #E85D04;
     padding-left: 10px;
-    color: white;
+    color: var(--default-color)
 }
 .main_content {
     display: flex;
@@ -18,12 +20,12 @@
     padding-bottom: 17px;
     margin-bottom: 19px;
     border-bottom: 4px solid #EF9637;
-    color: white;
+    color: var(--default-color);
     font-size: 30px;
     line-height: 36px;
 }
 .content_description {
-    color: white;
+    color: var(--default-color);
     margin-bottom: 63px;
     font-size: 20px;
     line-height: 24px;
@@ -46,7 +48,7 @@
     background: url("../../shared/icons/date.svg");
 }
 .date_text {
-    color: #B7B7B7;
+    color: var(--default-color)
 }
 .location_block {
     display: flex;
