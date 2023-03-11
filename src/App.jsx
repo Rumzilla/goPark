@@ -1,15 +1,16 @@
-import {Route, Switch} from "react-router-dom";
+import { Route, Switch } from 'react-router-dom';
+import './App.css';
+import SignInPage from './pages/AuthPage/AuthPage';
+import SignUpPage from './pages/SignUpPage/SignUpPage';
 import MainContent from "./components/MainContent/MainContent";
 import Footer from "./components/footer/footer";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import Header from "./components/header/header";
 import './App.css';
-// import {themeContext} from  './Context'
-// import { useContext } from "react";
+import NewsPage from "./pages/NewsPage/NewsPage";
 
-function App() {
-  // const theme = useContext(themeContext);
-  // const darkMode = theme.state.darkMode;
+
+  function App() {
     return (
       <div className="App"
       // style = {{
@@ -18,13 +19,16 @@ function App() {
       // }}
       >
           <Header/>
-          <Switch>
-            <Route exact path='/' component={MainContent}/>
+            <Switch>
+            <Route exact path='/' component={MainContent} />
             <Route exact path='/about' component={AboutPage}/>
+            <Route exact path='/news' component={NewsPage}/>
+            <Route exact path='/sign-in' component={SignInPage} />
+            <Route exact path='/sign-up' component={SignUpPage} />
           </Switch>
         <Footer />
       </div>
     );
-}
+  }
 
-export default App;
+  export default App;

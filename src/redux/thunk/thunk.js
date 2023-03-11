@@ -1,19 +1,10 @@
+import http from "../../services/api"
+
+
 import { setToken, setUserData } from "../../services/token"
-import {
-    authLoginErrorActionCreator,
-    authLoginRequestActionCreator,
-    authLoginSuccessActionCreator,
-    authRegisterErrorActionCreator,
-    authRegisterRequestActionCreator,
-    authRegisterSuccessActionCreator,
-    getCreatorsByIdFailureActionCreator,
-    getCreatorsByIdReceiveActionCreator,
-    getCreatorsByIdRequestActionCreator,
-    getEventByIdReceiveActionCreator,
-    getEventFailureActionCreator,
-    getEventReceiveActionCreator,
-    getEventRequestActionCreator
-} from "../actions/actions"
+
+import { authLoginErrorActionCreator, authLoginRequestActionCreator, authLoginSuccessActionCreator, authRegisterErrorActionCreator, authRegisterRequestActionCreator, authRegisterSuccessActionCreator } from "../actions/actions"
+
 
 // ----------------------auth----------------------//
 const authRegisterUser = (data) => async (dispatch) => {
@@ -75,4 +66,20 @@ const getCreator = (id) => async (dispatch) => {
     }
 }
 
-export default { authRegisterUser, authLoginUser, getEventList, getEventItem, getCreator}
+export default { authRegisterUser, authLoginUser, getEventList, getEventItem, getCreator }
+
+import {
+    authLoginErrorActionCreator,
+    authLoginRequestActionCreator,
+    authLoginSuccessActionCreator,
+    authRegisterErrorActionCreator,
+    authRegisterRequestActionCreator,
+    authRegisterSuccessActionCreator,
+    getCreatorsByIdFailureActionCreator,
+    getCreatorsByIdReceiveActionCreator,
+    getCreatorsByIdRequestActionCreator,
+    getEventByIdReceiveActionCreator,
+    getEventFailureActionCreator,
+    getEventReceiveActionCreator,
+    getEventRequestActionCreator
+} from "../actions/actions"

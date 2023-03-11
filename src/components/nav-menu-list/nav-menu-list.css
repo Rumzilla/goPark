@@ -13,6 +13,7 @@
     line-height: 49px;
     text-transform: uppercase;
     color: #000000;
+    cursor: pointer;
 }
 
 .tournament-text {
@@ -24,6 +25,7 @@
     line-height: 49px;
     text-transform: uppercase;
     color: #000000;
+    cursor: pointer;
 }
 
 .content-menu .dot:nth-child(3) {
@@ -60,16 +62,71 @@
 
 .header-content-block {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
 .tournament-img {
-    width: 630px;
-    height: 400px;
+    width: 500px;
+    height: 350px;
     display: block;
 }
 
 .tournament-img .tournament-text:hover{
     border: 10px solid black;
+}
+
+.content-img {
+    width: 500px;
+    height: 350px;
+    transition: all 1000ms ease-in-out;
+}
+
+.gallery {
+    background: url("../../shared/img/galery.png") center center/cover no-repeat;
+    width: 600px;
+    height:430px ;
+    border-radius: 20px;
+}
+
+.tournament {
+    background: url("../../shared/img/Tournament.png") center center/cover no-repeat;
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.lessons {
+    background: url("../../shared/img/Lessons.png") center center/cover no-repeat;
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.cleaning {
+    background: url("../../shared/img/Cleaning.png") center center/cover no-repeat;
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.sport {
+    background: url("../../shared/img/sport.png") center center/cover no-repeat;
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.for-kids {
+    background: url("../../shared/img/ForKids.png") center center/cover no-repeat;
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.excursion {
+    background: url("../../shared/img/excurses.png") center center/cover no-repeat;
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
 }
