@@ -41,7 +41,7 @@ const Header = () => {
                         </div>
                     </a>
                     <a href="" className="theme-icon"></a>
-                    <a href="/" className="login-button">
+                    <a href="/sign-in" className="login-button">
                         Войти
                         <span className="user-icon"></span>
                     </a>

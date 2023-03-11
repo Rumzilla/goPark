@@ -1,6 +1,6 @@
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
-import SignInPage from './pages/SignInPage/SignInPage';
+import SignInPage from './pages/AuthPage/AuthPage';
 import SignUpPage from './pages/SignUpPage/SignUpPage';
 import MainContent from "./components/MainContent/MainContent";
 import Footer from "./components/footer/footer";
