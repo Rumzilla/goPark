@@ -1,20 +1,20 @@
-import './App.css';
 import {Route, Switch} from "react-router-dom";
 import MainContent from "./components/MainContent/MainContent";
 import Footer from "./components/footer/footer";
+import AboutPage from "./pages/AboutPage/AboutPage";
 import Header from "./components/header/header";
+import './App.css';
 
 function App() {
     return (
-        <div>
-            <Header/>
-            <div className="container">
-                <Switch>
-                    <Route exact path='/' component={MainContent}/>
-                </Switch>
-            </div>
-            <Footer/>
-        </div>
+      <>
+          <Header/>
+          <Switch>
+            <Route exact path='/' component={MainContent}/>
+            <Route exact path='/about' component={AboutPage}/>
+          </Switch>
+        <Footer />
+      </>
     );
 }
 
