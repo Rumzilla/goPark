@@ -1,7 +1,8 @@
 import React from "react";
+import './nav-menu-list.css'
 
 const Nav_menu_list = () => {
-    
+
     return (
         <div className="header-content-block">
             <div className="content-menu">
@@ -17,9 +18,10 @@ const Nav_menu_list = () => {
                 <a href="/" className="content-item">для детей</a>
                 <a href="/" className="content-item">экскурсии</a>
 
-                <img className='tournament-img' src={tournament} alt="asd" />
 
             </div>
         </div>
     )
 }
+
+export default Nav_menu_list;
