@@ -1,9 +1,14 @@
 import React from 'react';
 import styles from './styles.module.css'
 import img1 from '../../shared/img/Rectangle1.png'
+import {useDispatch, useSelector} from "react-redux";
+import {eventList} from "../../redux/selectors/selectors";
 import SwiperBlock from "../swiper/Swiper";
 
 const MainContent = () => {
+    const eventItem = useSelector(eventList)
+    const dispatch = useDispatch()
+
     return (
         <div className={styles.content_block}>
             <h1 className={styles.main_title}>Ближайшие мероприятия</h1>
