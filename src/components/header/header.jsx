@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Nav_menu_list from '../nav-menu-list/nav-menu';
 import './header.css';
 
@@ -29,10 +30,14 @@ const Header = () => {
                     <a href="/" className="shop-icon"></a>
                     <a href="/" className="language-icon"></a>
                     <a href="" className="theme-icon"></a>
-                    <a href="/sign-in" className="login-button">
+                    {/* <Link to="/forms" className="login-button">
                         Войти
                         <span className="user-icon"></span>
-                    </a>
+                    </Link> */}
+                    <Link to="/user" className="login-button">
+                        Личный кабинет
+                        <span className="user-icon"></span>
+                    </Link>
                 </div>
             </div>
             {menu ? <Nav_menu_list /> : ''}
