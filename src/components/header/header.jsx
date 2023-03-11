@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import i18n from '../../18n';
 import Nav_menu_list from '../nav-menu-list/nav-menu';
+import Toggle from '../Toggle/Toggle';
 import './header.css';
 
 
@@ -43,7 +44,9 @@ const Header = () => {
                             <button onClick={() => changeLanguage('kg')} className="lang-menu-item">🇰🇬</button>
                         </div>
                     </a>
-                    <a href="" className="theme-icon"></a>
+                    <div className="toggle-wrap">
+                        <Toggle/>
+                    </div>
                     <a href="/" className="login-button">
                         Войти
                         <span className="user-icon"></span>
