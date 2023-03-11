@@ -4,14 +4,16 @@ import img1 from '../../shared/img/Rectangle1.png'
 import {useDispatch, useSelector} from "react-redux";
 import {eventList} from "../../redux/selectors/selectors";
 import SwiperBlock from "../swiper/Swiper";
+import { useTranslation } from 'react-i18next';
 
 const MainContent = () => {
     const eventItem = useSelector(eventList)
     const dispatch = useDispatch()
+    const {t} = useTranslation()
 
     return (
         <div className={styles.content_block}>
-            <h1 className={styles.main_title}>Ближайшие мероприятия</h1>
+            <h1 className={styles.main_title}>{t("upcoming")}</h1>
             <div className={styles.main_content}>
                 <img src={img1} alt=""/>
                 <div className={styles.content_about}>
@@ -35,10 +37,10 @@ const MainContent = () => {
                                 <span className={styles.creators_icon2}></span>
                                 <span className={styles.creators_icon3}></span>
                             </div>
-                            <span className={styles.creators_text}>Организаторы</span>
+                            <span className={styles.creators_text}>{t("orgs")}</span>
                         </div>
                         <button className={styles.apply_button}>
-                            Подать заявку
+                            {t("apply")}
                         </button>
                     </div>
                 </div>
