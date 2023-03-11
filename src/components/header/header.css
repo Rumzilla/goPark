@@ -1,0 +1,95 @@
+
+.header-title-block {
+    padding: 26px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-img {
+    display: block;
+    background: url(../../shared/icons/Logo.svg) center center/cover no-repeat;
+    width: 53px;
+    height: 47px;    
+}
+
+.nav-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    font-family: 'Montserrat Alternates';
+    margin-right: 46px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.nav-item:hover {
+    border-bottom: 3px solid #E39ACD;
+}
+
+.down-icon {
+    margin-left: 16px;
+    background: url(../../shared/icons/down.svg) center center/cover no-repeat;
+    width: 12px;
+    height: 6px;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #70A4D7;
+    font-family: 'Montserrat Alternates';
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-button:hover {
+    background: #9FB8CF;
+    transition: all 0.3s ease-in-out;
+}
+
+.user-icon {
+    margin-left: 12px;
+    display: inline-block;
+    background: url(../../shared/icons/user-icon.svg) center center/cover no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.shop-icon {
+    background: url(../../shared/icons/Shop.svg) center center/cover no-repeat;
+    width: 22px;
+    height: 26px;
+    margin-right: 24px;
+}
+
+.language-icon {
+    background: url(../../shared/icons/language.svg) center center/cover no-repeat;
+    width: 27px;
+    height: 26px;
+    margin-right: 24px;
+}
+
+.theme-icon {
+    background: url(../../shared/icons/theme.svg) center center/cover no-repeat;
+    width: 27px;
+    height: 26px;
+    margin-right: 24px;
+}
