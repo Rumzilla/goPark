@@ -40,7 +40,6 @@ const Header = () => {
                     <div className="lang-menu">
                             <button onClick={() => changeLanguage('en')} className="lang-menu-item">🇬🇧</button>
                             <button onClick={() => changeLanguage('ru')} className="lang-menu-item">🇷🇺</button>
-                            <button onClick={() => changeLanguage('kg')} className="lang-menu-item">🇰🇬</button>
                         </div>
                     </a>
                     <a href="" className="theme-icon"></a>
