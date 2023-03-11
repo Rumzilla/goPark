@@ -27,7 +27,7 @@ const Header = () => {
                     <a href='/' className="logo-img"></a>
                 </div>
                 <div className="nav-block">
-                    <button onClick={DropDownMenu} className="nav-item">
+                    <button onClick={DropDownMenu} className="nav-item-asd">
                         {t("events")}
                         <span className="down-icon"></span>
                     </button>
