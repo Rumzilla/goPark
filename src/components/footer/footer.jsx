@@ -1,7 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './style.css'
 
 const Footer = () => {
+  const {t} = useTranslation();
     return (
         <div className="footer-item">
           <div className="social-icons-links">
@@ -13,13 +15,13 @@ const Footer = () => {
               <a className='social-links email-icon' href="/"></a>
             </div>
           <div className="page-navigation">
-              <a className='page-link' href="/about">О нас</a>
-              <a className='page-link' href="/">Новости</a>
-              <a className='page-link' href="/">Связаться</a>
+              <a className='page-link' href="/">{t("about")}</a>
+              <a className='page-link' href="/">{t("news")}</a>
+              <a className='page-link' href="/">{t("contact")}</a>
             </div>
           <a href="/" className="head-icon-for-footer"></a>
           <span className="footer-description">
-            Организация мероприятий в парках города Бишкек
+            {t("organization")}
           </span>
           <div className="certificate-up-to">©2023</div>
         </div>

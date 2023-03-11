@@ -7,10 +7,15 @@ import { initReactI18next } from "react-i18next";
 i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
     fallbackLng: 'ru',
     debug: true,
+    ns: ['translation'],
+    defaultNS: 'translation',
     detection: {
         order:['queryString', 'cookie'],
         cache:['cookie']
     },
+    // backend: {                        
+    //     loadPath: '../public/locales/{{lng}}/{{ns}}.json',
+    //   },
     interpolation: {
         escapeValue: false
     },

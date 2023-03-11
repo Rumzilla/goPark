@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import { useTranslation } from "react-i18next";
 import './nav-menu-list.css'
 
 const Nav_menu_list = () => {
@@ -59,19 +60,20 @@ const Nav_menu_list = () => {
     const closeExc = () => {
         setOpenExcursion(false)
     }
+    const {t} = useTranslation()
 
     return (
         <div className="header-content-block">
             <div className="content-menu">
-                <span onMouseOver={openGal} onMouseOut={closeGal} className="content-item" >Выставки</span>
-                <span onMouseOver={openTour} onMouseOut={closeTour} className="tournament-text">турниры</span>
+                <span onMouseOver={openGal} onMouseOut={closeGal} className="content-item" >{t("exhibitions")}</span>
+                <span onMouseOver={openTour} onMouseOut={closeTour} className="tournament-text">{t("tournaments")}</span>
                 <span className="dot"></span>
-                <span onMouseOver={openLess} onMouseOut={closLess} className="content-item">лекции</span>
-                <span onMouseOver={openClean} onMouseOut={closeClean} className="content-item">субботники</span>
-                <span onMouseOver={openSport} onMouseOut={closeSport} className='content-item'>Спорт</span>
+                <span onMouseOver={openLess} onMouseOut={closLess} className="content-item">{t("lectures")}</span>
+                <span onMouseOver={openClean} onMouseOut={closeClean} className="content-item">{t("cleanup")}</span>
+                <span onMouseOver={openSport} onMouseOut={closeSport} className='content-item'>{t("sport")}</span>
                 <span className="dot"></span>
-                <span onMouseOver={openKids} onMouseOut={closeKids} className="content-item">для детей</span>
-                <span onMouseOver={openExc} onMouseOut={closeExc} className="content-item">экскурсии</span>
+                <span onMouseOver={openKids} onMouseOut={closeKids} className="content-item">{t("forkids")}</span>
+                <span onMouseOver={openExc} onMouseOut={closeExc} className="content-item">{t("excursions")}</span>
             </div>
             <div className="content-img">
                 {openGallery ?  <div className="gallery" /> : ""}
