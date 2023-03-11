@@ -7,3 +7,8 @@
     font-family: 'Montserrat Alternates', sans-serif;
     font-family: 'Oswald', sans-serif;
 }
+
+.container {
+    margin: 0 auto;
+    width: 1240px;
+}

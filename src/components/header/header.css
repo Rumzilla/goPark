@@ -1,10 +1,8 @@
-.header-block {
-}   
 
 .header-title-block {
     padding: 26px 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .logo-img {
@@ -21,6 +19,7 @@
 }
 
 .nav-item {
+    font-family: 'Montserrat Alternates';
     margin-right: 46px;
     font-weight: 600;
     font-size: 20px;
@@ -31,6 +30,12 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.nav-item:hover {
+    border-bottom: 3px solid #E39ACD;
 }
 
 .down-icon {
@@ -45,11 +50,19 @@
     align-items: center;
     padding: 15px;
     background: #70A4D7;
+    font-family: 'Montserrat Alternates';
     border-radius: 10px;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-button:hover {
+    background: #9FB8CF;
+    transition: all 0.3s ease-in-out;
 }
 
 .user-icon {
@@ -67,11 +80,16 @@
     margin-right: 24px;
 }
 
-.content-item {
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 49px;
-    text-transform: uppercase;
-    color: #000000;
+.language-icon {
+    background: url(../../shared/icons/language.svg) center center/cover no-repeat;
+    width: 27px;
+    height: 26px;
+    margin-right: 24px;
+}
 
+.theme-icon {
+    background: url(../../shared/icons/theme.svg) center center/cover no-repeat;
+    width: 27px;
+    height: 26px;
+    margin-right: 24px;
 }
