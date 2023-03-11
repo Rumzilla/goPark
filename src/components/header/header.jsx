@@ -37,12 +37,11 @@ const Header = () => {
                     <div className="lang-menu">
                             <button onClick={() => changeLanguage('en')} className="lang-menu-item">🇬🇧</button>
                             <button onClick={() => changeLanguage('ru')} className="lang-menu-item">🇷🇺</button>
-                            <button onClick={() => changeLanguage('kg')} className="lang-menu-item">🇰🇬</button>
                         </div>
                     </a>
                     <a href="" className="theme-icon"></a>
                     <a href="/" className="login-button">
-                        Войти
+                        {t("login")}
                         <span className="user-icon"></span>
                     </a>
                 </div>
