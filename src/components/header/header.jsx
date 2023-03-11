@@ -10,9 +10,6 @@ const Header = () => {
     const DropDownMenu = () => {
         setMenu(!menu)
     }
-
-    console.log(menu)
-
     return (
         <div className="container">
             <div className="header-title-block">
