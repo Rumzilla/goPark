@@ -44,7 +44,7 @@ const Header = () => {
                     </a>
                     <a href="" className="theme-icon"></a>
                     <a href="/" className="login-button">
-                        Войти
+                        {t("login")}
                         <span className="user-icon"></span>
                     </a>
                 </div>
