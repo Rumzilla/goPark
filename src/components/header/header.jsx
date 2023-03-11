@@ -1,19 +1,28 @@
 import React, { useState } from 'react';
+<<<<<<< HEAD
 import { Link } from 'react-router-dom';
+=======
+import { useTranslation } from 'react-i18next';
+import i18n from '../../18n';
+>>>>>>> 3ba229f8e106b5d44ab5cdaf272bddd0c24e3618
 import Nav_menu_list from '../nav-menu-list/nav-menu';
 import './header.css';
 
 
+
 const Header = () => {
+
+    // const {i18n} = useTranslation();
+    const changeLanguage = (language) => {
+        i18n.changeLanguage(language);
+    }
+    const {t} = useTranslation()
   
     const [menu, setMenu] = useState()
 
     const DropDownMenu = () => {
         setMenu(!menu)
     }
-
-    console.log(menu)
-
     return (
         <div className="container">
             <div className="header-title-block">
@@ -22,16 +31,26 @@ const Header = () => {
                     <a href='/' className="logo-img"></a>
                 </div>
                 <div className="nav-block">
-                    <button onClick={DropDownMenu} className="nav-item">
-                        Мероприятия
+                    <button onClick={DropDownMenu} className="nav-item-asd">
+                        {t("events")}
                         <span className="down-icon"></span>
                     </button>
 
-                    <a href="/" className="shop-icon"></a>
-                    <a href="/" className="language-icon"></a>
+                    <a href="/shop" className="shop-icon"></a>
+                    <a className="language-icon">
+                    <div className="lang-menu">
+                            <button onClick={() => changeLanguage('en')} className="lang-menu-item">🇬🇧</button>
+                            <button onClick={() => changeLanguage('ru')} className="lang-menu-item">🇷🇺</button>
+                        </div>
+                    </a>
                     <a href="" className="theme-icon"></a>
+<<<<<<< HEAD
                     {/* <Link to="/forms" className="login-button">
                         Войти
+=======
+                    <a href="/" className="login-button">
+                        {t("login")}
+>>>>>>> 3ba229f8e106b5d44ab5cdaf272bddd0c24e3618
                         <span className="user-icon"></span>
                     </Link> */}
                     <Link to="/user" className="login-button">

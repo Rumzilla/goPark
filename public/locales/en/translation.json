@@ -5,7 +5,7 @@
     "tournaments": "Tournaments",
     "lectures": "Lectures",
     "cleanup": "Clean-up event",
-    "Sport": "Sport",
+    "sport": "Sports",
     "forkids": "For Kids",
     "excursions": "Excursions",
     "upcoming": "Upcoming events",
@@ -15,5 +15,18 @@
     "about": "About Us",
     "news": "News",
     "contact": "Contact",
-    "organization": "Organization of events in the parks of the city of Bishkek"
+    "organization": "Organization of events in the parks of the city of Bishkek",
+
+    "codifyCEO": "CEO Dinara Ruslan",
+    "mega": "MEGA - telecommunications operator",
+    "megaCEO": "General Director Nurlan Mamytov",
+    "gpinfocom": "GP «Infocom»",
+    "gpinfocomCEO": "Director Asel Kenenbayeva",
+    "ministry": "Ministry of Digital Development of the KR",
+    "ministr": "Minister Talantbek Imanov",
+    "gosuslugi": "State portal of electronic services of the KR",
+    "gosuslugiCEO": "Director Chyngyz Amanatov",
+    "sixboxCEO": "CEO Kalmurat Dzhangaziyev"
+
+    
 }
