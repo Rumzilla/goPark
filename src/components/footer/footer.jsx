@@ -14,7 +14,7 @@ const Footer = () => {
             </div>
           <div className="page-navigation">
               <a className='page-link' href="/about">О нас</a>
-              <a className='page-link' href="/">Новости</a>
+              <a className='page-link' href="/news">Новости</a>
               <a className='page-link' href="/">Связаться</a>
             </div>
           <a href="/" className="head-icon-for-footer"></a>
