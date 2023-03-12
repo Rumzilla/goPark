@@ -21,7 +21,7 @@ const ShopPage = () => {
                     <div className="card-header">{t("tote")}</div>
                     <div className="card-text">{t("totedscr")}</div>
                     <div className="card-price">999 PC</div>
-                    <button className="buy-btn">{t("totedscr")}</button>
+                    <button className="buy-btn">{t("get")}</button>
                 </div>
                 <div className="shop-card">
                     <div className="card-img-third"></div>
