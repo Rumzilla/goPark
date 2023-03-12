@@ -49,8 +49,8 @@ const Header = () => {
                     <div className="toggle-wrap">
                         <Toggle/>
                     </div>
-                    <a href="/" className="login-button">
-                    <a href="" className="theme-icon"></a>
+                    {/* <a href="/" className="login-button"></a>
+                    <a href="" className="theme-icon"></a> */}
                     <Link to="/forms" className={isAuth ? "login-button-none" :"login-button" }>
                         {/* Войти */}
 
