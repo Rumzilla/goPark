@@ -60,6 +60,9 @@
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
 }
+.login-button-none{
+    display: none;
+}
 
 .login-button:hover {
     background: #9FB8CF;

@@ -1,29 +1,34 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import i18n from '../../18n';
 import Nav_menu_list from '../nav-menu-list/nav-menu';
 import './header.css';
+import { getToken } from '../../services/token';
 
 
 
 const Header = () => {
+    const [isAuth, setAuth] = useState(false)
 
     // const {i18n} = useTranslation();
     const changeLanguage = (language) => {
         i18n.changeLanguage(language);
     }
-    const {t} = useTranslation()
-  
+    const { t } = useTranslation()
+
     const [menu, setMenu] = useState()
 
     const DropDownMenu = () => {
         setMenu(!menu)
     }
+    useEffect(() => {
+        setAuth(getToken())
+    }, [])
     return (
         <div className="container">
             <div className="header-title-block">
-                
+
                 <div className="logo-block">
                     <a href='/' className="logo-img"></a>
                 </div>
@@ -35,21 +40,21 @@ const Header = () => {
 
                     <a href="/shop" className="shop-icon"></a>
                     <a className="language-icon">
-                    <div className="lang-menu">
+                        <div className="lang-menu">
                             <button onClick={() => changeLanguage('en')} className="lang-menu-item">🇬🇧</button>
                             <button onClick={() => changeLanguage('ru')} className="lang-menu-item">🇷🇺</button>
                         </div>
                     </a>
                     <a href="" className="theme-icon"></a>
-                    <Link to="/forms" className="login-button">
+                    <Link to="/forms" className={isAuth ? "login-button-none" :"login-button" }>
                         {/* Войти */}
 
-                  
+
                         {t("login")}
 
                         <span className="user-icon"></span>
                     </Link>
-                    <Link to="/user" className="login-button">
+                    <Link to="/user" className={isAuth ? "login-button" : "login-button-none"}>
                         Личный кабинет
                         <span className="user-icon"></span>
                     </Link>
