@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import './ShopPage.css';
 
+
 const ShopPage = () => {
     const {t} = useTranslation();
     return (

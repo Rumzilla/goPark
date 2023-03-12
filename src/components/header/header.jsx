@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import React, {useEffect, useState} from 'react';
+import {Link} from 'react-router-dom';
+import {useTranslation} from 'react-i18next';
 import i18n from '../../18n';
 import Nav_menu_list from '../nav-menu-list/nav-menu';
 import Toggle from '../Toggle/Toggle';
 import './header.css';
-import { getToken } from '../../services/token';
-
+import {getToken} from '../../services/token';
 
 
 const Header = () => {
@@ -16,7 +15,7 @@ const Header = () => {
     const changeLanguage = (language) => {
         i18n.changeLanguage(language);
     }
-    const { t } = useTranslation()
+    const {t} = useTranslation()
 
     const [menu, setMenu] = useState()
 
@@ -27,11 +26,12 @@ const Header = () => {
         setAuth(getToken())
     }, [])
     return (
+
         <div className="container">
             <div className="header-title-block">
 
                 <div className="logo-block">
-                    <a href='/' className="logo-img"></a>
+                    <Link to='/' className="logo-img"></Link>
                 </div>
                 <div className="nav-block">
                     <button onClick={DropDownMenu} className="nav-item-asd">
@@ -39,7 +39,7 @@ const Header = () => {
                         <span className="down-icon"></span>
                     </button>
 
-                    <a href="/shop" className="shop-icon"></a>
+                    <Link to="/shop" className="shop-icon"></Link>
                     <a className="language-icon">
                         <div className="lang-menu">
                             <button onClick={() => changeLanguage('en')} className="lang-menu-item">🇬🇧</button>
@@ -49,9 +49,8 @@ const Header = () => {
                     <div className="toggle-wrap">
                         <Toggle/>
                     </div>
-                    {/* <a href="/" className="login-button"></a>
-                    <a href="" className="theme-icon"></a> */}
-                    <Link to="/forms" className={isAuth ? "login-button-none" :"login-button" }>
+                    <Link to="/forms" className={isAuth ? "login-button-none" : "login-button"}>
+
                         {/* Войти */}
 
                         {t("login")}
@@ -64,9 +63,9 @@ const Header = () => {
                     </Link>
                 </div>
             </div>
-            {menu ? <Nav_menu_list /> : ''}
+            {menu ? <Nav_menu_list/> : ''}
         </div>
     )
-}
+};
 
 export default Header;

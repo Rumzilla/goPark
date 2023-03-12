@@ -56,7 +56,10 @@ const authLoginUser = (data) => async (dispatch) => {
 const getEventList = (data) => async (dispatch) => {
     dispatch(getEventRequestActionCreator())
     try {
+        const res = await http.get("http://127.0.0.1:8000/api/ivent/", data)
+
         const res = await http.get('#')
+
         dispatch(getEventReceiveActionCreator(res.data))
     }
     catch (err) {
@@ -67,7 +70,7 @@ const getEventList = (data) => async (dispatch) => {
 const getEventItem = (id) => async (dispatch) => {
     dispatch(getEventRequestActionCreator())
     try {
-        const res = await http.get(`http://13.115.195.252/shop/${id}`)
+        const res = await http.get(`http://127.0.0.1:8000/ivent/${id}`)
         dispatch(getEventByIdReceiveActionCreator(res.data))
     } catch (err) {
         dispatch(getCreatorsByIdFailureActionCreator(err))
@@ -77,7 +80,7 @@ const getEventItem = (id) => async (dispatch) => {
 const getCreator = (id) => async (dispatch) => {
     dispatch(getCreatorsByIdRequestActionCreator())
     try {
-        const res = await http.get(`http://13.115.195.252/shop/${id}`)
+        const res = await http.get(`http://127.0.0.1:8000/creater/${id}`)
         dispatch(getCreatorsByIdReceiveActionCreator(res.data))
     } catch (err) {
         dispatch(getCreatorsByIdFailureActionCreator(err))
