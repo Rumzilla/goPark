@@ -11,6 +11,7 @@ import UserPage from './pages/UserPage/UserPage';
 import NewsPage from "./pages/NewsPage/NewsPage";
 import ContactPage from './pages/ContactPage/ContactPage';
 import ShopPage from './pages/ShopPage/ShopPage';
+import EventPage from "./pages/EventPage/EventPage";
 
 
   function App() {
@@ -19,6 +20,7 @@ import ShopPage from './pages/ShopPage/ShopPage';
           <Header/>
             <Switch>
             <Route exact path='/' component={MainContent} />
+              <Route exact  path='/eventPage' component={EventPage}/>
             <Route exact path='/about' component={AboutPage}/>
             <Route exact path='/forms' component={AuthPage} />
             <Route exact path='/user' component={UserPage} />

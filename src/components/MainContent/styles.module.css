@@ -22,6 +22,9 @@
     font-size: 30px;
     line-height: 36px;
 }
+.title_link{
+    color: white;
+}
 .content_description {
     color: white;
     margin-bottom: 63px;
