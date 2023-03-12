@@ -3,6 +3,10 @@
     width: 100%;
     display: block;
 }
+
+.full-height {
+    min-height: 100vh;
+}
 .row{
     flex-wrap: wrap;
     margin-right: -15px;
@@ -18,12 +22,6 @@
     padding-bottom: 3rem!important;
     padding-top: 3rem!important;
 }
-
-
-.full-height {
-    min-height: 100vh;
-}
-
 .toggle_text {
     display: flex;
     width: 900px;

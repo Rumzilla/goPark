@@ -1,4 +1,4 @@
-import {AUTH_LOGIN, AUTH_LOGOUT, AUTH_REGISTER, GET_CREATOR_BY_ID, GET_EVENT, GET_EVENT_BY_ID} from "../types/types";
+import {AUTH_LOGIN, AUTH_LOGOUT, AUTH_REGISTER, FILTER_EVENT, GET_CREATOR_BY_ID, GET_EVENT, GET_EVENT_BY_ID, GET_USER} from "../types/types";
 
 const getEventRequestActionCreator = () => ({
     type: GET_EVENT.REQUEST
@@ -42,6 +42,20 @@ const getCreatorsByIdFailureActionCreator = (err) => ({
     payload: err
 })
 
+const getUserDataRequestActionCreator = () => ({
+    type: GET_USER.REQUEST
+})
+
+const getUserDataReceiveActionCreator = (data) => ({
+    type: GET_USER.RECEIVE,
+    payload: data
+})
+
+const getUserDataFailureActionCreator = (err) => ({
+    type: GET_USER.FAILURE,
+    payload: err
+})
+
 const authLoginRequestActionCreator = () => ({
     type: AUTH_LOGIN.REQUEST
 })
@@ -79,6 +93,13 @@ const authLogoutActionCreator = () => ({
     type: AUTH_LOGOUT
 })
 
+//---
+//----
+const filterEventActionCreator = (filter) => ({
+    type: FILTER_EVENT,
+    payload: filter
+})
+
 export {
     getEventRequestActionCreator,
     getEventReceiveActionCreator,
@@ -91,6 +112,10 @@ export {
     getCreatorsByIdRequestActionCreator,
     getCreatorsByIdReceiveActionCreator,
     getCreatorsByIdFailureActionCreator,
+
+    getUserDataRequestActionCreator,
+    getUserDataReceiveActionCreator,
+    getUserDataFailureActionCreator,
 
     authLoginRequestActionCreator,
     authLoginSuccessActionCreator,
