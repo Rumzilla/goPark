@@ -66,6 +66,6 @@ const Header = () => {
             {menu ? <Nav_menu_list/> : ''}
         </div>
     )
-}
+};
 
 export default Header;

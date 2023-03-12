@@ -1,6 +1,8 @@
 import React, {useEffect} from 'react';
 import styles from './styles.module.css'
-import img1 from '../../shared/img/Rectangle1.png'
+import img1 from '../../shared/img/Cleaning.png'
+import img2 from '../../shared/img/sport.png'
+import img3 from '../../shared/img/Tournament.png'
 import eventOperation from '../../redux/thunk/thunk'
 import {useDispatch, useSelector} from "react-redux";
 import {eventList, eventLoader, filterEvent} from "../../redux/selectors/selectors";
@@ -58,12 +60,12 @@ const MainContent = () => {
         }
     }
 
-    useEffect(() => {
-        dispatch(eventOperation.getEventList())
-    }, [])
-    if (eventLoading) {
-        return <EventLoaderPage/>
-    }
+    // useEffect(() => {
+    //     dispatch(eventOperation.getEventList())
+    // }, [])
+    // if (eventLoading) {
+    //     return <EventLoaderPage/>
+    // }
 
     return (
         <div>
@@ -104,7 +106,6 @@ const MainContent = () => {
                     </div>
                 </div>
                 <div className={styles.main_content}>
-                    <img src={img1} alt=""/>
                     <div className={styles.content_about}>
                         <h2 className={styles.content_title}><Link className={styles.title_link}
                                                                    to='/eventPage'>Выставка</Link></h2>
@@ -135,9 +136,10 @@ const MainContent = () => {
                             </button>
                         </div>
                     </div>
+                    <img src={img2} alt=""/>
                 </div>
                 <div className={styles.main_content}>
-                    <img src={img1} alt=""/>
+                    <img src={img3} alt=""/>
                     <div className={styles.content_about}>
                         <h2 className={styles.content_title}><Link className={styles.title_link}
                                                                    to='/eventPage'>Выставка</Link></h2>
