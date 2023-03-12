@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import i18n from '../../18n';
-
 import Nav_menu_list from '../nav-menu-list/nav-menu';
 import './header.css';
 
@@ -42,7 +41,6 @@ const Header = () => {
                         </div>
                     </a>
                     <a href="" className="theme-icon"></a>
-
                     <Link to="/forms" className="login-button">
                         {/* Войти */}
 

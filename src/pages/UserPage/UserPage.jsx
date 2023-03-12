@@ -14,7 +14,7 @@ const UserPage = () => {
     return (
         <div>
             <div className={styles.userWelcome}>
-                Добро пожаловать на наш веб-сайт!
+                Добро пожаловать на Park.Go!
             </div>
 
             <div className={styles.userCard}>
