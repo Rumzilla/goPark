@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-<<<<<<< HEAD
 import { Link } from 'react-router-dom';
-=======
 import { useTranslation } from 'react-i18next';
 import i18n from '../../18n';
->>>>>>> 3ba229f8e106b5d44ab5cdaf272bddd0c24e3618
+
 import Nav_menu_list from '../nav-menu-list/nav-menu';
 import './header.css';
 
@@ -44,15 +42,15 @@ const Header = () => {
                         </div>
                     </a>
                     <a href="" className="theme-icon"></a>
-<<<<<<< HEAD
-                    {/* <Link to="/forms" className="login-button">
-                        Войти
-=======
-                    <a href="/" className="login-button">
+
+                    <Link to="/forms" className="login-button">
+                        {/* Войти */}
+
+                  
                         {t("login")}
->>>>>>> 3ba229f8e106b5d44ab5cdaf272bddd0c24e3618
+
                         <span className="user-icon"></span>
-                    </Link> */}
+                    </Link>
                     <Link to="/user" className="login-button">
                         Личный кабинет
                         <span className="user-icon"></span>
