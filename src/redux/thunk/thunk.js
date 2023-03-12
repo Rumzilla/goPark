@@ -1,4 +1,10 @@
+import http from "../../services/api"
+
+
 import { setToken, setUserData } from "../../services/token"
+
+// import { authLoginErrorActionCreator, authLoginRequestActionCreator, authLoginSuccessActionCreator, authRegisterErrorActionCreator, authRegisterRequestActionCreator, authRegisterSuccessActionCreator } from "../actions/actions"
+
 import {
     authLoginErrorActionCreator,
     authLoginRequestActionCreator,
@@ -12,14 +18,17 @@ import {
     getEventByIdReceiveActionCreator,
     getEventFailureActionCreator,
     getEventReceiveActionCreator,
-    getEventRequestActionCreator
+    getEventRequestActionCreator,
+    getUserDataFailureActionCreator,
+    getUserDataReceiveActionCreator,
+    getUserDataRequestActionCreator
 } from "../actions/actions"
 
 // ----------------------auth----------------------//
 const authRegisterUser = (data) => async (dispatch) => {
     dispatch(authRegisterRequestActionCreator())
     try {
-        const res = await http.post("http://13.115.195.252/register/", data)
+        const res = await http.post("http://127.0.0.1:8000/register/", data)
         dispatch(authRegisterSuccessActionCreator(res.data))
         setUserData(JSON.stringify(res.data))
     } catch (err) {
@@ -74,5 +83,16 @@ const getCreator = (id) => async (dispatch) => {
         dispatch(getCreatorsByIdFailureActionCreator(err))
     }
 }
+//---
+const getUserData = (data) => async (dispatch) => {
+    dispatch(getUserDataRequestActionCreator())
+    try {
+        const res = await http.get("http://13.115.195.252/shop/")
+        dispatch(getUserDataReceiveActionCreator(res.data))
+    }
+    catch (err) {
+        dispatch(getUserDataFailureActionCreator(err))
+    }
+}
 
-export default { authRegisterUser, authLoginUser, getEventList, getEventItem, getCreator}
+export default { authRegisterUser, authLoginUser, getEventList, getEventItem, getCreator, getUserData }

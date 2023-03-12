@@ -1,13 +1,13 @@
-
 .header-title-block {
     padding: 26px 0;
     display: flex;
     justify-content: space-between;
+    background: rgba(0, 0, 0, 0);
 }
 
 .logo-img {
     display: block;
-    background: url(../../shared/icons/Logo.svg) center center/cover no-repeat;
+    background: url(../../shared/icons/Logo_white.svg) center center/cover no-repeat;
     width: 53px;
     height: 47px;    
 }
@@ -18,14 +18,14 @@
     align-items: center;
 }
 
-.nav-item {
+.nav-item-asd {
     font-family: 'Montserrat Alternates';
     margin-right: 46px;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     text-transform: capitalize;
-    color: #000000;
+    color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,15 +34,16 @@
     border: none;
 }
 
-.nav-item:hover {
-    border-bottom: 3px solid #E39ACD;
+.nav-item-asd:hover {
+    text-decoration: 3px underline #E39ACD;
 }
 
 .down-icon {
     margin-left: 16px;
-    background: url(../../shared/icons/down.svg) center center/cover no-repeat;
+    background: url(../../shared/icons/down_white.png) center center/cover no-repeat;
     width: 12px;
     height: 6px;
+    color: #FFFFFF;
 }
 
 .login-button {
@@ -74,22 +75,63 @@
 }
 
 .shop-icon {
-    background: url(../../shared/icons/Shop.svg) center center/cover no-repeat;
+    background: url(../../shared/icons/Shop_white.svg) center center/cover no-repeat;
     width: 22px;
     height: 26px;
     margin-right: 24px;
 }
 
 .language-icon {
-    background: url(../../shared/icons/language.svg) center center/cover no-repeat;
+    background: url(../../shared/icons/language_white.svg) center center/cover no-repeat;
+    width: 27px;
+    height: 26px;
+    margin-right: 24px;
+    position: relative;
+}
+.lang-menu {
+    display: none;
+    margin-top: 25px;
+    width: 35px;
+    height: 60px;
+    background: #3A3A3A;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+}
+.lang-menu:hover {
+    display: block;
+}
+
+.language-icon:hover .lang-menu {
+    display: block;
+    background: #2a2a2a;
+}
+
+.lang-menu-item:hover .lang-menu {
+    display: block;
+}
+
+
+.lang-menu-item {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px;
+    font-size: 25px;
+    line-height: 20px;
+}
+.lang-menu-item:hover {
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.theme-icon {
+    background: url(../../shared/icons/theme_white.svg) center center/cover no-repeat;
     width: 27px;
     height: 26px;
     margin-right: 24px;
 }
 
-.theme-icon {
-    background: url(../../shared/icons/theme.svg) center center/cover no-repeat;
-    width: 27px;
-    height: 26px;
-    margin-right: 24px;
+button:focus {
+    outline: none;
 }

@@ -1,11 +1,11 @@
 .content_block {
-    margin-top: 137px;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 400;
-    margin-bottom: 100px;
+    margin: 137px auto 100px;
+    width: 1240px;
 }
 .main_title {
-    border-left: 3px solid #E39ACD;
+    border-left: 3px solid #E85D04;
     padding-left: 10px;
     color: white;
 }
@@ -108,4 +108,7 @@
     font-size: 15px;
     line-height: 18px;
     color: #FFFFFF;
+}
+.apply_button:hover {
+    background: #EF9637;
 }
