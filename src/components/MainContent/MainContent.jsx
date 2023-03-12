@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './styles.module.css'
 import img1 from '../../shared/img/Rectangle1.png'
 import { useDispatch, useSelector } from "react-redux";
@@ -6,12 +6,14 @@ import { eventList, filterEvent } from "../../redux/selectors/selectors";
 import SwiperBlock from "../swiper/Swiper";
 import { useTranslation } from 'react-i18next';
 import { TYPE_OF_FILTER } from '../../redux/reducers/filter-reducer';
+import eventOperations from '../../redux/thunk/thunk'
 
 const MainContent = () => {
     const eventItem = useSelector(eventList)
     const dispatch = useDispatch()
     const { t } = useTranslation()
     const filterEventState = useSelector(filterEvent)
+    const {getEventList} = eventOperations
 
     const filterHoney = (honeylistFiltered, filter) => {
         switch (filter) {
@@ -50,7 +52,7 @@ const MainContent = () => {
     }
 
     // useEffect(() => {
-    //     dispatch(honeyOperation.getHoneyList())
+    //     dispatch(eventOperations.getEventList())
     // }, [])
     return (
         <div className={styles.content_block}>

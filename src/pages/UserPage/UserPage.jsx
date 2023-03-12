@@ -5,7 +5,8 @@ import userOperations from '../../redux/thunk/thunk';
 import styles from './styles.module.css';
 
 const UserPage = () => {
-    const userDataRes = useSelector(userData)
+    const userData = localStorage.getItem('user_data')
+    const dataObj = JSON.parse(userData)
     const dispatch = useDispatch();
     const {getUserData} = userOperations;
     useEffect(() => {
@@ -18,9 +19,9 @@ const UserPage = () => {
             </div>
 
             <div className={styles.userCard}>
-                <p> Валентина Вухова</p>
-                <p>ID: 19230495</p>
-                <p>Баллы: 980 pc</p>
+                <p>Почта: {dataObj.email}</p>
+                <p>ID: {dataObj.id}</p>
+                <p>Баллы: {dataObj.point} pc</p>
             </div>
 
         </div>
