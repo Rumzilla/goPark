@@ -41,6 +41,14 @@ const Header = () => {
                         </div>
                     </a>
                     <a href="" className="theme-icon"></a>
+                    <Link to="/forms" className="login-button">
+                        {/* Войти */}
+
+                  
+                        {t("login")}
+
+                        <span className="user-icon"></span>
+                    </Link>
                     <Link to="/user" className="login-button">
                         Личный кабинет
                         <span className="user-icon"></span>

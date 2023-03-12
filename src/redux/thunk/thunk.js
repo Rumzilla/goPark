@@ -18,7 +18,10 @@ import {
     getEventByIdReceiveActionCreator,
     getEventFailureActionCreator,
     getEventReceiveActionCreator,
-    getEventRequestActionCreator
+    getEventRequestActionCreator,
+    getUserDataFailureActionCreator,
+    getUserDataReceiveActionCreator,
+    getUserDataRequestActionCreator
 } from "../actions/actions"
 
 // ----------------------auth----------------------//
@@ -80,5 +83,16 @@ const getCreator = (id) => async (dispatch) => {
         dispatch(getCreatorsByIdFailureActionCreator(err))
     }
 }
+//---
+const getUserData = (data) => async (dispatch) => {
+    dispatch(getUserDataRequestActionCreator())
+    try {
+        const res = await http.get("http://13.115.195.252/shop/")
+        dispatch(getUserDataReceiveActionCreator(res.data))
+    }
+    catch (err) {
+        dispatch(getUserDataFailureActionCreator(err))
+    }
+}
 
-export default { authRegisterUser, authLoginUser, getEventList, getEventItem, getCreator }
+export default { authRegisterUser, authLoginUser, getEventList, getEventItem, getCreator, getUserData }
