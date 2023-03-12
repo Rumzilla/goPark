@@ -47,7 +47,7 @@ const authLoginUser = (data) => async (dispatch) => {
 const getEventList = (data) => async (dispatch) => {
     dispatch(getEventRequestActionCreator())
     try {
-        const res = await http.get("http://13.115.195.252/shop/")
+        const res = await http.get("http://127.0.0.1:8000/ivent/")
         dispatch(getEventReceiveActionCreator(res.data))
     }
     catch (err) {
