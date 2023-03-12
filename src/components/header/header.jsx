@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import i18n from '../../18n';
 import Nav_menu_list from '../nav-menu-list/nav-menu';
+import Toggle from '../Toggle/Toggle';
 import './header.css';
 import { getToken } from '../../services/token';
 
@@ -45,10 +46,13 @@ const Header = () => {
                             <button onClick={() => changeLanguage('ru')} className="lang-menu-item">🇷🇺</button>
                         </div>
                     </a>
+                    <div className="toggle-wrap">
+                        <Toggle/>
+                    </div>
+                    <a href="/" className="login-button">
                     <a href="" className="theme-icon"></a>
                     <Link to="/forms" className={isAuth ? "login-button-none" :"login-button" }>
                         {/* Войти */}
-
 
                         {t("login")}
 

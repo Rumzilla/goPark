@@ -15,7 +15,7 @@ import ShopPage from './pages/ShopPage/ShopPage';
 
   function App() {
     return (
-      <>
+      <div className="App">
           <Header/>
             <Switch>
             <Route exact path='/' component={MainContent} />
@@ -29,7 +29,7 @@ import ShopPage from './pages/ShopPage/ShopPage';
             <Route exact path='/shop' component={ShopPage} />
           </Switch>
         <Footer />
-      </>
+      </div>
     );
   }
 
