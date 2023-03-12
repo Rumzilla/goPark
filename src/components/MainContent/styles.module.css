@@ -1,4 +1,4 @@
-@import('../../index.css');
+
 
 .content_block {
     font-family: 'Montserrat Alternates', sans-serif;
@@ -63,7 +63,7 @@
 .location_text {
     font-size: 15px;
     line-height: 18px;
-    color: #B7B7B7;
+    color: var(--default-color); 
 }
 .apply_event {
     display: flex;
@@ -101,7 +101,7 @@
     font-size: 15px;
     line-height: 18px;
     text-decoration-line: underline;
-    color: #D9D9D9;
+    color: var(--default-color); 
 }
 .apply_button {
     background: #E85D04;
