@@ -22,7 +22,6 @@ const MainContent = () => {
     console.log(event, 'event')
 
 
-
     const filterHoney = (honeylistFiltered, filter) => {
         switch (filter) {
             case TYPE_OF_FILTER.SHOW_ALL:
@@ -67,43 +66,111 @@ const MainContent = () => {
     }
 
     return (
-
-        // {event.map((item) => (
-        <div className={styles.content_block}>
-            <h1 className={styles.main_title}>{t("upcoming")}</h1>
-            <div className={styles.main_content}>
-                <img src={img1} alt=""/>
-                <div className={styles.content_about}>
-                    <h2 className={styles.content_title}><Link className={styles.title_link} to = '/eventPage'>Выставка</Link></h2>
-                    <p className={styles.content_description}>Научитесь видеть прекрасное в двух мазках, или
-                        зачем нам
-                        современное искусство?</p>
-                    <div className={styles.date_location}>
-                        <div className={styles.date_block}>
-                            <span className={styles.date_icon}></span>
-                            <span className={styles.date_text}>Март 12, 2023</span>
-                        </div>
-                        <div className={styles.location_block}>
-                            <span className={styles.location_icon}></span>
-                            <span className={styles.location_text}>Бишкек, Парк - Ынтымак</span>
-                        </div>
-                    </div>
-                    <div className={styles.apply_event}>
-                        <div className={styles.creators}>
-                            <div className={styles.creators_icons_parent}>
-                                <span className={styles.creators_icon}></span>
-                                <span className={styles.creators_icon2}></span>
-                                <span className={styles.creators_icon3}></span>
+        <div>
+            {/*// {event.map((item) => (*/}
+            <div className={styles.content_block}>
+                <h1 className={styles.main_title}>{t("upcoming")}</h1>
+                <div className={styles.main_content}>
+                    <img src={img1} alt=""/>
+                    <div className={styles.content_about}>
+                        <h2 className={styles.content_title}><Link className={styles.title_link}
+                                                                   to='/eventPage'>Выставка</Link></h2>
+                        <p className={styles.content_description}>Научитесь видеть прекрасное в двух мазках, или
+                            зачем нам
+                            современное искусство?</p>
+                        <div className={styles.date_location}>
+                            <div className={styles.date_block}>
+                                <span className={styles.date_icon}></span>
+                                <span className={styles.date_text}>Март 12, 2023</span>
                             </div>
-                            <span className={styles.creators_text}>{t("orgs")}</span>
+                            <div className={styles.location_block}>
+                                <span className={styles.location_icon}></span>
+                                <span className={styles.location_text}>Бишкек, Парк - Ынтымак</span>
+                            </div>
                         </div>
-                        <button className={styles.apply_button}>
-                            {t("apply")}
-                        </button>
+                        <div className={styles.apply_event}>
+                            <div className={styles.creators}>
+                                <div className={styles.creators_icons_parent}>
+                                    <span className={styles.creators_icon}></span>
+                                    <span className={styles.creators_icon2}></span>
+                                    <span className={styles.creators_icon3}></span>
+                                </div>
+                                <span className={styles.creators_text}>{t("orgs")}</span>
+                            </div>
+                            <button className={styles.apply_button}>
+                                {t("apply")}
+                            </button>
+                        </div>
                     </div>
                 </div>
+                <div className={styles.main_content}>
+                    <img src={img1} alt=""/>
+                    <div className={styles.content_about}>
+                        <h2 className={styles.content_title}><Link className={styles.title_link}
+                                                                   to='/eventPage'>Выставка</Link></h2>
+                        <p className={styles.content_description}>Научитесь видеть прекрасное в двух мазках, или
+                            зачем нам
+                            современное искусство?</p>
+                        <div className={styles.date_location}>
+                            <div className={styles.date_block}>
+                                <span className={styles.date_icon}></span>
+                                <span className={styles.date_text}>Март 12, 2023</span>
+                            </div>
+                            <div className={styles.location_block}>
+                                <span className={styles.location_icon}></span>
+                                <span className={styles.location_text}>Бишкек, Парк - Ынтымак</span>
+                            </div>
+                        </div>
+                        <div className={styles.apply_event}>
+                            <div className={styles.creators}>
+                                <div className={styles.creators_icons_parent}>
+                                    <span className={styles.creators_icon}></span>
+                                    <span className={styles.creators_icon2}></span>
+                                    <span className={styles.creators_icon3}></span>
+                                </div>
+                                <span className={styles.creators_text}>{t("orgs")}</span>
+                            </div>
+                            <button className={styles.apply_button}>
+                                {t("apply")}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.main_content}>
+                    <img src={img1} alt=""/>
+                    <div className={styles.content_about}>
+                        <h2 className={styles.content_title}><Link className={styles.title_link}
+                                                                   to='/eventPage'>Выставка</Link></h2>
+                        <p className={styles.content_description}>Научитесь видеть прекрасное в двух мазках, или
+                            зачем нам
+                            современное искусство?</p>
+                        <div className={styles.date_location}>
+                            <div className={styles.date_block}>
+                                <span className={styles.date_icon}></span>
+                                <span className={styles.date_text}>Март 12, 2023</span>
+                            </div>
+                            <div className={styles.location_block}>
+                                <span className={styles.location_icon}></span>
+                                <span className={styles.location_text}>Бишкек, Парк - Ынтымак</span>
+                            </div>
+                        </div>
+                        <div className={styles.apply_event}>
+                            <div className={styles.creators}>
+                                <div className={styles.creators_icons_parent}>
+                                    <span className={styles.creators_icon}></span>
+                                    <span className={styles.creators_icon2}></span>
+                                    <span className={styles.creators_icon3}></span>
+                                </div>
+                                <span className={styles.creators_text}>{t("orgs")}</span>
+                            </div>
+                            <button className={styles.apply_button}>
+                                {t("apply")}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <SwiperBlock/>
             </div>
-            <SwiperBlock/>
         </div>
     )
 };
