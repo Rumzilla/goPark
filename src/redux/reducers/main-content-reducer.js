@@ -4,7 +4,6 @@ const initialState = {
     loading: false,
     error: null,
     data: {},
-    list: []
 }
 
 const contentReducers = (state = initialState, action) => {
@@ -18,7 +17,7 @@ const contentReducers = (state = initialState, action) => {
             return {
                 ...state,
                 loading: false,
-                list: action.payload
+                data: action.payload
             }
         case GET_EVENT.FAILURE:
             return {

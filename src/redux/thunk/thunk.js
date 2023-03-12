@@ -56,7 +56,7 @@ const authLoginUser = (data) => async (dispatch) => {
 const getEventList = (data) => async (dispatch) => {
     dispatch(getEventRequestActionCreator())
     try {
-        const res = await http.get("http://localhost:1337/api/pets/")
+        const res = await http.get("http://127.0.0.1:8000/api/ivent/", data)
         dispatch(getEventReceiveActionCreator(res.data))
     }
     catch (err) {

@@ -12,7 +12,6 @@ import {TYPE_OF_FILTER} from '../../redux/reducers/filter-reducer';
 import {Link} from "react-router-dom";
 import EventLoaderPage from "../../pages/EventPageLoader/EventLoaderPage";
 
-
 const MainContent = () => {
     const event = useSelector(eventList)
     const eventLoading = useSelector(eventLoader)
@@ -59,7 +58,7 @@ const MainContent = () => {
                 return honeylistFiltered
         }
     }
-
+    //
     // useEffect(() => {
     //     dispatch(eventOperation.getEventList())
     // }, [])
