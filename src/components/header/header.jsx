@@ -25,7 +25,7 @@ const Header = () => {
             <div className="header-title-block">
                 
                 <div className="logo-block">
-                    <a href='/' className="logo-img"></a>
+                    <Link to='/' className="logo-img"></Link>
                 </div>
                 <div className="nav-block">
                     <button onClick={DropDownMenu} className="nav-item-asd">
@@ -33,14 +33,14 @@ const Header = () => {
                         <span className="down-icon"></span>
                     </button>
 
-                    <a href="/shop" className="shop-icon"></a>
+                    <Link to="/shop" className="shop-icon"></Link>
                     <a className="language-icon">
                     <div className="lang-menu">
                             <button onClick={() => changeLanguage('en')} className="lang-menu-item">🇬🇧</button>
                             <button onClick={() => changeLanguage('ru')} className="lang-menu-item">🇷🇺</button>
                         </div>
                     </a>
-                    <a href="" className="theme-icon"></a>
+                    <Link to="" className="theme-icon"></Link>
                     <Link to="/forms" className="login-button">
                         {/* Войти */}
 
