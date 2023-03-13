@@ -1,6 +1,3 @@
-
-import React, {useEffect} from 'react';
-
 import React, { useEffect } from 'react';
 import styles from './styles.module.css'
 import img1 from '../../shared/img/Cleaning.png'
@@ -16,8 +13,6 @@ import {TYPE_OF_FILTER} from '../../redux/reducers/filter-reducer';
 import {Link} from "react-router-dom";
 import EventLoaderPage from "../../pages/EventPageLoader/EventLoaderPage";
 
-import { useTranslation } from 'react-i18next';
-import { TYPE_OF_FILTER } from '../../redux/reducers/filter-reducer';
 import eventOperations from '../../redux/thunk/thunk'
 
 
@@ -25,7 +20,6 @@ const MainContent = () => {
     const event = useSelector(eventList)
     const eventLoading = useSelector(eventLoader)
     const dispatch = useDispatch()
-    const {getEventList} = eventOperation
     const {t} = useTranslation()
     const filterEventState = useSelector(filterEvent)
     const {getEventList} = eventOperations

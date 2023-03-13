@@ -58,8 +58,6 @@ const getEventList = (data) => async (dispatch) => {
     try {
         const res = await http.get("http://127.0.0.1:8000/api/ivent/", data)
 
-        const res = await http.get('#')
-
         dispatch(getEventReceiveActionCreator(res.data))
     }
     catch (err) {
