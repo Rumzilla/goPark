@@ -27,7 +27,7 @@ const Toggle = () => {
         <Sun onClick={() => handleClick()}/>
         {/* <Moon onClick={() => handleClick(false)}/> */}
         {/* <Sun onClick={() => handleClick(true)}/> */}
-        <div className={theme ? "r-button" : 't-button'} /> 
+        <div className={theme ? "t-button" : 'r-button'} /> 
             
         </div>
     </div>
